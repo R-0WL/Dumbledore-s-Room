@@ -1,0 +1,16 @@
+[package]
+name = "dumbledore_office"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nalgebra-glm = "0.18.0"
+minifb = "0.26.0"
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = true
